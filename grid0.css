@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('background.jpg');
+    background-size: cover;
+}
+
+/* title */
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin: 0 0 80px 0;
+    padding: 0;
+}
+
+#main-container {
+    display: grid;
+    background-color: rgba(255, 255, 255, 0.8);
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+    border-radius: 10px;
+    grid-gap: 1rem;
+    padding: 1rem;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "dsply dsply dsply dsply"
+        "reset reset prcnt divid"
+        "seven eight ninee multi"
+        "fourr fivee sixee minus"
+        "oneee twoee three pluse"
+        "zeroe dotee equal pluse"
+}
+
+.box {
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.box-size-01 {
+    height: 70px;
+    width: 70px;
+}
+
+.box-size-02 {
+    height: 155px;
+    width: 70px;
+}
+
+.box-size-03 {
+    height: 70;
+    width: 155px;
+}
+
+.box:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Display */
+#display {
+    grid-area: dsply;
+    height: 105px;
+    max-width: 330px;
+    background-color: transparent;
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 5px;
+    grid-template-areas:
+        "upper"
+        "lower";
+    overflow-wrap: anywhere;
+}
+
+#display-upper {
+    height: 40px;
+    max-width: 330px;
+    grid-area: upper;
+}
+
+#display-lower {
+    grid-area: lower;
+    height: 60px;
+    max-width: 330px;
+    font-size: 50px;
+}
+
+.display-text {
+    text-align: right;
+    max-width: 330px;
+}
+
+/* Operators */
+#equal {
+    grid-area: equal;
+}
+
+#reset {
+    grid-area: reset;
+}
+
+#pos-neg {
+    grid-area: posne;
+}
+
+#plus {
+    grid-area: pluss;
+}
+
+#percent {
+    grid-area: prcnt;
+}
+
+#divide {
+    grid-area: divid;
+}
+
+#multi {
+    grid-area: multi;
+}
+
+#plus {
+    grid-area: pluse;
+}
+
+#button-d {
+    grid-area: dotee;
+}
+
+#button-0 {
+    grid-area: zeroe;
+}
+
+#button-1
+{
+    grid-area: oneee;
+}
+
+#button-2
+{
+    grid-area: twoee;
+}
+
+#button-3
+{
+    grid-area: three;
+}
+
+#button-4
+{
+    grid-area: fourr;
+}
+
+#button-5
+{
+    grid-area: fivee;
+}
+
+#button-6
+{
+    grid-area: sixee;
+}
+
+#button-7
+{
+    grid-area: seven;
+}
+
+#button-8
+{
+    grid-area: eight;
+}
+
+#button-9
+{
+    grid-area: ninee;
+}
